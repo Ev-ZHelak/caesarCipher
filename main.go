@@ -31,7 +31,6 @@ func (x *InputUser) inputKey(s string) error {
 		return fmt.Errorf("неверный формат ввода")
 	}
 
-	// Конвертируем строку в число
 	res, _ := strconv.Atoi(s)
 	x.Key = res
 	return nil
